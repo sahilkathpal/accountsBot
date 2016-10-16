@@ -31,8 +31,8 @@ app.use('/users', users);
 
 //set up and run AccountsBot
 var AccountsBot = require('./lib/accountsBot')
-
-var token = "xoxb-91955673543-BOOpyOQZMQZp5chUhKXg11W0"
+var config = require('config.json')
+var token = config.token
 var name = 'accounts_bot'
 
 var accountsBot = new AccountsBot({
