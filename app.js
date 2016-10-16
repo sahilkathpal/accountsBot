@@ -30,7 +30,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 //set up and run AccountsBot
-var AccountsBot = require('../lib/accountsBot')
+var AccountsBot = require('lib/accountsBot')
 
 var token = 'xoxb-91955673543-nI77OsktoByhDwIGJSMTVkle' || process.env.BOT_API_KEY
 var name = 'accounts_bot' || process.env.BOT_NAME
