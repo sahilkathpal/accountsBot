@@ -13,9 +13,9 @@ function register (username, slackName) {
         user.save(function(err) {
           if (err) {
             console.log('Error in Saving user: '+err)
-            throw err
           }
           return true
+        })
       }
       //new user
       var newUser = new User({
@@ -25,7 +25,6 @@ function register (username, slackName) {
       newUser.save(function () {
         if (err) {
           console.log('Error in Saving user: '+err)
-          throw err
         }
         return true
       })
